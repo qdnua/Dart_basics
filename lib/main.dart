@@ -4,6 +4,6 @@ void main() {
 
 
 print ('Привет');
-print ('new row');
-print ('new row');
+
+
 }
