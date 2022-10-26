@@ -4,6 +4,7 @@
 import 'dart:math';
 
 class Calc {
+  // К заданию 1
   //Наибольший общий делитель
   int nod(int a, int b) {
     int t;
@@ -23,9 +24,6 @@ class Calc {
   }
   //Наименьшее общее кратное
   int nok(int a, int b){
-      //вариант 1
-      //return  (((a*b).abs()) / nod(a,b)).round();
-      //вариант 2
       return  (a / nod(a,b) * b).round();
   }
   //Разложние числа на простые числа
@@ -67,6 +65,7 @@ class Calc {
     }
   }
   //-------------------------------------------------------------
+  // К заданию 2
   // перевод из 10-й в двоичную
   from10To2(int l10){
     int l2=0;
@@ -93,6 +92,7 @@ class Calc {
     }
     return l10;
   }
+  // К заданию 3
   // поиск в строке чисел
   findNumInString(String s, List<num> res){
     s = s.trim();
@@ -275,7 +275,7 @@ class TrapezoidRule{
       res = calcRule(func, a, b, nseg);
       err = _abs(res - resOld);
     }
-  return res;
+    return res;
   }
   num calcRule(Function func, num a, num b, int nseg) {
     // nseg - число отрезков разбиения
